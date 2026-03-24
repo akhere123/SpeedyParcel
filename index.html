@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SwiftHaul - Fast & Reliable Delivery Service</title>
+    <title>SpeedyParcel - Fast Delivery Benin City</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
@@ -11,7 +11,7 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
         body { font-family: 'Inter', sans-serif; }
-        .gradient-bg { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); }
+        .gradient-bg { background: linear-gradient(135deg, #10b981 0%, #059669 100%); }
         .animate-float { animation: float 6s ease-in-out infinite; }
         @keyframes float { 0%, 100% { transform: translateY(0px); } 50% { transform: translateY(-20px); } }
     </style>
@@ -23,205 +23,173 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between h-16">
                 <div class="flex items-center">
-                    <h1 class="text-2xl font-bold bg-gradient-to-r from-purple-600 to-indigo-600 bg-clip-text text-transparent">
-                        SwiftHaul
+                    <h1 class="text-2xl font-bold bg-gradient-to-r from-green-600 to-emerald-600 bg-clip-text text-transparent">
+                        SpeedyParcel
                     </h1>
                 </div>
                 <div class="hidden md:flex items-center space-x-8">
-                    <a href="#home" class="text-gray-700 hover:text-purple-600 font-medium transition-colors">Home</a>
-                    <a href="#services" class="text-gray-700 hover:text-purple-600 font-medium transition-colors">Services</a>
-                    <a href="#pricing" class="text-gray-700 hover:text-purple-600 font-medium transition-colors">Pricing</a>
-                    <a href="#contact" class="text-gray-700 hover:text-purple-600 font-medium transition-colors">Contact</a>
+                    <a href="#home" class="text-gray-700 hover:text-green-600 font-medium transition-colors">Home</a>
+                    <a href="#services" class="text-gray-700 hover:text-green-600 font-medium transition-colors">Services</a>
+                    <a href="#book" class="text-gray-700 hover:text-green-600 font-medium transition-colors">Book Delivery</a>
+                    <a href="#pricing" class="text-gray-700 hover:text-green-600 font-medium transition-colors">Pricing</a>
+                    <a href="#contact" class="text-gray-700 hover:text-green-600 font-medium transition-colors">Contact</a>
                 </div>
                 <div class="md:hidden flex items-center">
-                    <button id="mobile-menu-btn" class="text-gray-700 hover:text-purple-600">
+                    <button id="mobile-menu-btn" class="text-gray-700 hover:text-green-600">
                         <i class="fas fa-bars text-xl"></i>
                     </button>
                 </div>
             </div>
         </div>
-        <!-- Mobile menu -->
         <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-200">
             <div class="px-2 pt-2 pb-3 space-y-1">
-                <a href="#home" class="block px-3 py-2 text-gray-700 hover:text-purple-600 font-medium">Home</a>
-                <a href="#services" class="block px-3 py-2 text-gray-700 hover:text-purple-600 font-medium">Services</a>
-                <a href="#pricing" class="block px-3 py-2 text-gray-700 hover:text-purple-600 font-medium">Pricing</a>
-                <a href="#contact" class="block px-3 py-2 text-gray-700 hover:text-purple-600 font-medium">Contact</a>
+                <a href="#home" class="block px-3 py-2 text-gray-700 hover:text-green-600 font-medium">Home</a>
+                <a href="#services" class="block px-3 py-2 text-gray-700 hover:text-green-600 font-medium">Services</a>
+                <a href="#book" class="block px-3 py-2 text-gray-700 hover:text-green-600 font-medium">Book Delivery</a>
+                <a href="#pricing" class="block px-3 py-2 text-gray-700 hover:text-green-600 font-medium">Pricing</a>
+                <a href="#contact" class="block px-3 py-2 text-gray-700 hover:text-green-600 font-medium">Contact</a>
             </div>
         </div>
     </nav>
 
-    <!-- Hero Section -->
+    <!-- Hero -->
     <section id="home" class="pt-20 pb-24 gradient-bg text-white overflow-hidden">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <div class="animate-float">
-                <i class="fas fa-truck text-6xl mb-6 opacity-80"></i>
-            </div>
+            <div class="animate-float"><i class="fas fa-truck text-6xl mb-6 opacity-80"></i></div>
             <h1 class="text-5xl md:text-7xl font-bold mb-6 leading-tight">
-                Lightning-Fast<br>
-                <span class="bg-gradient-to-r from-yellow-400 to-orange-500 bg-clip-text text-transparent">Delivery</span>
+                Fast Delivery<br><span class="bg-gradient-to-r from-yellow-400 to-orange-500 bg-clip-text text-transparent">Benin City</span>
             </h1>
-            <p class="text-xl md:text-2xl mb-10 max-w-3xl mx-auto opacity-90 leading-relaxed">
-                Same-day delivery across your city. Track in real-time. 
-                Trusted by 5,000+ businesses.
-            </p>
-            <div class="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
-                <a href="#contact" class="bg-white text-purple-600 px-12 py-4 rounded-full font-semibold text-lg hover:shadow-2xl hover:scale-105 transition-all duration-300">
+            <p class="text-xl md:text-2xl mb-10 max-w-3xl mx-auto opacity-90">Same-day across Edo State. Live GPS tracking.</p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center mb-12">
+                <a href="#book" class="bg-white text-green-600 px-12 py-4 rounded-full font-semibold text-lg hover:shadow-2xl hover:scale-105 transition-all">
                     Book Delivery Now
                 </a>
-                <a href="#services" class="border-2 border-white text-white px-12 py-4 rounded-full font-semibold text-lg hover:bg-white hover:text-purple-600 transition-all duration-300">
-                    See Services
+                <a href="#contact" class="border-2 border-white text-white px-12 py-4 rounded-full font-semibold text-lg hover:bg-white hover:text-green-600 transition-all">
+                    +234 701 705 4326
                 </a>
             </div>
-            <div class="flex justify-center items-center space-x-8 text-sm opacity-75">
-                <div class="flex items-center space-x-2">
-                    <i class="fas fa-bolt text-yellow-400"></i>
-                    <span>Under 2 Hours</span>
-                </div>
-                <div class="flex items-center space-x-2">
-                    <i class="fas fa-shield-alt text-green-400"></i>
-                    <span>Insured</span>
-                </div>
-            </div>
         </div>
     </section>
 
-    <!-- Services -->
-    <section id="services" class="py-24 bg-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <!-- NEW: Sender/Receiver Booking Form -->
+    <section id="book" class="py-24 bg-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-20">
-                <h2 class="text-4xl md:text-5xl font-bold bg-gradient-to-r from-purple-600 to-indigo-600 bg-clip-text text-transparent mb-6">
-                    Delivery Services
+                <h2 class="text-4xl md:text-5xl font-bold bg-gradient-to-r from-green-600 to-emerald-600 bg-clip-text text-transparent mb-6">
+                    Book Your Delivery
                 </h2>
-                <p class="text-xl text-gray-600 max-w-2xl mx-auto">
-                    From small packages to pallets, we've got you covered 24/7.
-                </p>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">Enter sender & receiver details for instant quote.</p>
             </div>
-            <div class="grid md:grid-cols-3 gap-8">
-                <div class="group bg-gradient-to-br from-indigo-50 to-purple-50 p-10 rounded-3xl hover:shadow-2xl hover:-translate-y-4 transition-all duration-500 border border-indigo-100">
-                    <div class="w-20 h-20 bg-gradient-to-r from-purple-500 to-indigo-600 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
-                        <i class="fas fa-shipping-fast text-2xl text-white"></i>
-                    </div>
-                    <h3 class="text-2xl font-bold mb-4 text-gray-900">Express</h3>
-                    <p class="text-gray-600 mb-6 leading-relaxed">Same-day delivery within 2 hours. Perfect for urgent needs.</p>
-                    <ul class="space-y-2 text-sm text-gray-500 mb-8">
-                        <li><i class="fas fa-check text-green-500 mr-2"></i>Real-time tracking</li>
-                        <li><i class="fas fa-check text-green-500 mr-2"></i>Live driver chat</li>
-                    </ul>
-                    <span class="inline-block bg-purple-100 text-purple-800 px-4 py-2 rounded-full text-sm font-semibold">Starts at $5.99</span>
+            
+            <div class="grid lg:grid-cols-2 gap-12">
+                <!-- SENDER DETAILS -->
+                <div class="bg-gradient-to-br from-green-50 to-emerald-50 p-10 rounded-3xl border-2 border-green-100">
+                    <h3 class="text-2xl font-bold mb-8 flex items-center text-green-800">
+                        <i class="fas fa-user fas fa-map-pin mr-3 text-green-600"></i>Sender Details
+                    </h3>
+                    <form id="sender-form">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                            <input type="text" placeholder="Sender Full Name" class="p-4 border border-gray-300 rounded-2xl focus:ring-4 focus:ring-green-200 focus:border-green-500 text-lg" required>
+                            <input type="tel" placeholder="Sender Phone" class="p-4 border border-gray-300 rounded-2xl focus:ring-4 focus:ring-green-200 focus:border-green-500 text-lg" required>
+                        </div>
+                        <input type="text" placeholder="Pickup Address (Street, Area, Benin City)" class="w-full p-4 border border-gray-300 rounded-2xl focus:ring-4 focus:ring-green-200 focus:border-green-500 text-lg mb-6" required>
+                        <textarea placeholder="Additional pickup instructions (Landmark, Gate color, etc)" rows="2" class="w-full p-4 border border-gray-300 rounded-2xl focus:ring-4 focus:ring-green-200 focus:border-green-500 text-lg"></textarea>
+                    </form>
                 </div>
-                <div class="group bg-gradient-to-br from-green-50 to-emerald-50 p-10 rounded-3xl hover:shadow-2xl hover:-translate-y-4 transition-all duration-500 border border-green-100 relative overflow-hidden">
-                    <div class="absolute inset-0 bg-gradient-to-r from-green-400 to-emerald-500 opacity-5"></div>
-                    <div class="w-20 h-20 bg-gradient-to-r from-green-500 to-emerald-600 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
-                        <i class="fas fa-boxes text-2xl text-white"></i>
-                    </div>
-                    <h3 class="text-2xl font-bold mb-4 text-gray-900">Standard</h3>
-                    <p class="text-gray-600 mb-6 leading-relaxed">Next-day delivery at economy rates. Reliable and affordable.</p>
-                    <ul class="space-y-2 text-sm text-gray-500 mb-8">
-                        <li><i class="fas fa-check text-green-500 mr-2"></i>Free pickup</li>
-                        <li><i class="fas fa-check text-green-500 mr-2"></i>Insurance included</li>
-                    </ul>
-                    <span class="inline-block bg-green-100 text-green-800 px-4 py-2 rounded-full text-sm font-semibold">Starts at $3.99</span>
+
+                <!-- RECEIVER DETAILS -->
+                <div class="bg-gradient-to-br from-emerald-50 to-green-50 p-10 rounded-3xl border-2 border-emerald-100">
+                    <h3 class="text-2xl font-bold mb-8 flex items-center text-emerald-800">
+                        <i class="fas fa-user-check fas fa-map-marker-alt mr-3 text-emerald-600"></i>Receiver Details
+                    </h3>
+                    <form id="receiver-form">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                            <input type="text" placeholder="Receiver Full Name" class="p-4 border border-gray-300 rounded-2xl focus:ring-4 focus:ring-emerald-200 focus:border-emerald-500 text-lg" required>
+                            <input type="tel" placeholder="Receiver Phone" class="p-4 border border-gray-300 rounded-2xl focus:ring-4 focus:ring-emerald-200 focus:border-emerald-500 text-lg" required>
+                        </div>
+                        <input type="text" placeholder="Drop-off Address (Street, Area, Benin City)" class="w-full p-4 border border-gray-300 rounded-2xl focus:ring-4 focus:ring-emerald-200 focus:border-emerald-500 text-lg mb-6" required>
+                        <textarea placeholder="Delivery instructions (Call before arrival?)" rows="2" class="w-full p-4 border border-gray-300 rounded-2xl focus:ring-4 focus:ring-emerald-200 focus:border-emerald-500 text-lg"></textarea>
+                    </form>
                 </div>
-                <div class="group bg-gradient-to-br from-orange-50 to-red-50 p-10 rounded-3xl hover:shadow-2xl hover:-translate-y-4 transition-all duration-500 border border-orange-100">
-                    <div class="w-20 h-20 bg-gradient-to-r from-orange-500 to-red-600 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
-                        <i class="fas fa-warehouse text-2xl text-white"></i>
+            </div>
+
+            <!-- PACKAGE & BOOK BUTTON -->
+            <div class="mt-12 text-center">
+                <div class="bg-white p-8 rounded-3xl shadow-2xl max-w-2xl mx-auto mb-8">
+                    <h3 class="text-2xl font-bold mb-6 text-gray-900">Package Details</h3>
+                    <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
+                        <input type="number" placeholder="Weight (kg)" class="p-4 border border-gray-300 rounded-xl text-center text-lg" min="0.1">
+                        <input type="text" placeholder="Size LxWxH" class="p-4 border border-gray-300 rounded-xl text-center text-lg">
+                        <select class="p-4 border border-gray-300 rounded-xl text-lg">
+                            <option>Service</option>
+                            <option>Express (2hrs) ₦2,500+</option>
+                            <option>Standard (Day) ₦1,500+</option>
+                        </select>
+                        <input type="text" placeholder="Value (₦)" class="p-4 border border-gray-300 rounded-xl text-center text-lg">
                     </div>
-                    <h3 class="text-2xl font-bold mb-4 text-gray-900">Bulk</h3>
-                    <p class="text-gray-600 mb-6 leading-relaxed">Pallet shipping and warehouse-to-warehouse. Volume discounts.</p>
-                    <ul class="space-y-2 text-sm text-gray-500 mb-8">
-                        <li><i class="fas fa-check text-green-500 mr-2"></i>Custom scheduling</li>
-                        <li><i class="fas fa-check text-green-500 mr-2"></i>Priority loading</li>
-                    </ul>
-                    <span class="inline-block bg-orange-100 text-orange-800 px-4 py-2 rounded-full text-sm font-semibold">Custom Quote</span>
+                    <button id="get-quote" class="w-full bg-gradient-to-r from-green-600 to-emerald-600 text-white py-6 px-8 rounded-2xl font-bold text-xl hover:shadow-2xl hover:scale-105 transition-all">
+                        <i class="fas fa-calculator mr-3"></i>Get Instant Quote & Book
+                    </button>
+                </div>
+                <div id="quote-result" class="hidden bg-green-100 border-2 border-green-500 text-green-800 p-8 rounded-3xl text-lg font-semibold">
+                    <i class="fas fa-check-circle text-3xl mb-4 block"></i>
+                    <div>Estimated: <span id="quote-price" class="text-2xl font-bold text-green-800">₦2,800</span></div>
+                    <div class="mt-4">Driver assigned in 5 mins! Call: <a href="tel:+2347017054326" class="font-bold">+234 701 705 4326</a></div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Live Map Demo -->
-    <section class="py-24 bg-gradient-to-br from-gray-900 to-gray-800 text-white">
+    <!-- Live Map Benin City -->
+    <section id="map-section" class="py-24 bg-gradient-to-br from-gray-900 to-gray-800 text-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-20">
-                <h2 class="text-4xl md:text-5xl font-bold mb-6">Track Your Delivery Live</h2>
-                <p class="text-xl opacity-90 max-w-2xl mx-auto">See exactly where your package is in real-time.</p>
+                <h2 class="text-4xl md:text-5xl font-bold mb-6">Live Tracking - Benin City</h2>
             </div>
             <div class="grid md:grid-cols-2 gap-12 items-center">
                 <div id="map" class="h-96 rounded-3xl shadow-2xl"></div>
-                <div>
-                    <div class="bg-white/10 backdrop-blur-md p-8 rounded-3xl mb-8 border border-white/20">
-                        <h3 class="text-2xl font-bold mb-4 flex items-center"><i class="fas fa-map-marker-alt text-orange-400 mr-3"></i>Current Status</h3>
-                        <div class="space-y-4">
-                            <div class="flex justify-between items-center p-4 bg-white/20 rounded-2xl">
-                                <span>Order #SWH-8472</span>
-                                <span class="font-bold text-2xl">✓ Delivered</span>
-                            </div>
-                            <div class="flex items-center p-4 bg-white/10 rounded-2xl">
-                                <i class="fas fa-truck text-2xl text-orange-400 mr-4"></i>
-                                <span>Driver: Alex R. - 2 min away</span>
-                            </div>
+                <div class="bg-white/10 p-8 rounded-3xl">
+                    <h3 class="text-2xl font-bold mb-4">Delivery #SP-8472</h3>
+                    <div class="space-y-4 text-lg">
+                        <div class="flex justify-between p-4 bg-white/20 rounded-2xl">
+                            <span>Status</span>
+                            <span class="font-bold text-2xl">✓ En Route</span>
+                        </div>
+                        <div class="flex items-center p-4 bg-white/10 rounded-2xl">
+                            <i class="fas fa-truck text-2xl text-green-400 mr-4"></i>
+                            <span>Driver: Chuks - ETA 12min</span>
                         </div>
                     </div>
-                    <a href="#contact" class="w-full bg-gradient-to-r from-purple-600 to-indigo-600 text-white py-5 px-8 rounded-2xl font-semibold text-lg hover:shadow-2xl hover:scale-105 transition-all block text-center">
-                        Track Your Order
-                    </a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Pricing -->
+    <!-- Pricing (shortened) -->
     <section id="pricing" class="py-24 bg-gray-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-20">
-                <h2 class="text-4xl md:text-5xl font-bold bg-gradient-to-r from-purple-600 to-indigo-600 bg-clip-text text-transparent mb-6">
-                    Simple Pricing
-                </h2>
-            </div>
-            <div class="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
-                <div class="bg-white p-10 rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-300 border border-gray-200">
-                    <div class="text-center mb-8">
-                        <h3 class="text-3xl font-bold text-gray-900 mb-2">Starter</h3>
-                        <div class="text-4xl font-bold text-purple-600 mb-2">$3<span class="text-lg font-normal text-gray-600">.99</span></div>
-                        <div class="text-sm text-gray-500">per delivery</div>
-                    </div>
-                    <ul class="space-y-3 mb-10 text-gray-700">
-                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-3"></i>Up to 5kg</li>
-                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-3"></i>Next day</li>
-                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-3"></i>Tracking</li>
-                    </ul>
-                    <a href="#contact" class="w-full bg-purple-600 text-white py-4 px-6 rounded-2xl font-semibold hover:bg-purple-700 transition-colors block text-center">Get Started</a>
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl md:text-5xl font-bold text-center mb-20 bg-gradient-to-r from-green-600 to-emerald-600 bg-clip-text text-transparent">
+                Benin City Pricing
+            </h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-3xl shadow-xl text-center">
+                    <h3 class="text-2xl font-bold mb-4">Express</h3>
+                    <div class="text-4xl font-bold text-green-600 mb-4">₦2,500+</div>
+                    <p class="text-gray-600 mb-8">2 hours anywhere in Benin</p>
+                    <a href="#book" class="block w-full bg-green-600 text-white py-4 rounded-2xl font-semibold hover:bg-green-700">Book Express</a>
                 </div>
-                <div class="bg-gradient-to-br from-purple-600 to-indigo-600 p-10 rounded-3xl shadow-2xl text-white relative overflow-hidden">
-                    <div class="absolute inset-0 bg-white/10"></div>
-                    <div class="relative">
-                        <div class="text-center mb-8">
-                            <span class="inline-block bg-white/20 px-4 py-2 rounded-full text-sm font-semibold mb-4">Most Popular</span>
-                            <h3 class="text-3xl font-bold mb-2">Express</h3>
-                            <div class="text-4xl font-bold mb-2">$5<span class="text-lg font-normal">.99</span></div>
-                            <div class="text-sm opacity-90">per delivery</div>
-                        </div>
-                        <ul class="space-y-3 mb-10">
-                            <li class="flex items-center"><i class="fas fa-check mr-3"></i>Up to 20kg</li>
-                            <li class="flex items-center"><i class="fas fa-check mr-3"></i>2 hours</li>
-                            <li class="flex items-center"><i class="fas fa-check mr-3"></i>Live tracking</li>
-                            <li class="flex items-center"><i class="fas fa-check mr-3"></i>Insurance</li>
-                        </ul>
-                        <a href="#contact" class="w-full bg-white text-purple-600 py-4 px-6 rounded-2xl font-semibold hover:bg-gray-100 transition-colors block text-center shadow-lg">Choose Express</a>
-                    </div>
+                <div class="bg-gradient-to-br from-green-600 to-emerald-600 p-8 rounded-3xl text-white text-center shadow-2xl">
+                    <span class="bg-white/20 px-4 py-2 rounded-full text-sm font-semibold mb-4 inline-block">Most Popular</span>
+                    <h3 class="text-2xl font-bold mb-4">Standard</h3>
+                    <div class="text-4xl font-bold mb-4">₦1,500+</div>
+                    <p class="mb-8">Same day Edo State</p>
+                    <a href="#book" class="block w-full bg-white text-green-600 py-4 rounded-2xl font-semibold hover:bg-gray-100 shadow-lg">Book Standard</a>
                 </div>
-                <div class="bg-white p-10 rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-300 border border-gray-200">
-                    <div class="text-center mb-8">
-                        <h3 class="text-3xl font-bold text-gray-900 mb-2">Business</h3>
-                        <div class="text-4xl font-bold text-gray-900 mb-2">Custom</div>
-                        <div class="text-sm text-gray-500">per delivery</div>
-                    </div>
-                    <ul class="space-y-3 mb-10 text-gray-700">
-                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-3"></i>Unlimited weight</li>
-                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-3"></i>Scheduled</li>
-                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-3"></i>API access</li>
-                    </ul>
-                    <a href="#contact" class="w-full border-2 border-gray-300 text-gray-700 py-4 px-6 rounded-2xl font-semibold hover:bg-gray-50 transition-colors block text-center">Contact Sales</a>
+                <div class="bg-white p-8 rounded-3xl shadow-xl text-center">
+                    <h3 class="text-2xl font-bold mb-4">Bulk</h3>
+                    <div class="text-4xl font-bold text-gray-900 mb-4">Custom</div>
+                    <p class="text-gray-600 mb-8">Pallets & Warehouses</p>
+                    <a href="#contact" class="block w-full border-2 border-gray-300 text-gray-700 py-4 rounded-2xl font-semibold hover:bg-gray-50">Get Quote</a>
                 </div>
             </div>
         </div>
@@ -231,132 +199,101 @@
     <section id="contact" class="py-24 bg-white">
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-20">
-                <h2 class="text-4xl md:text-5xl font-bold bg-gradient-to-r from-purple-600 to-indigo-600 bg-clip-text text-transparent mb-6">
-                    Ready to Ship?
-                </h2>
-                <p class="text-xl text-gray-600">Get a quote in 30 seconds or book instantly.</p>
+                <h2 class="text-4xl md:text-5xl font-bold bg-gradient-to-r from-green-600 to-emerald-600 bg-clip-text text-transparent">Contact SpeedyParcel</h2>
             </div>
-            <form id="contact-form" class="grid md:grid-cols-2 gap-8 max-w-3xl mx-auto">
-                <input type="text" placeholder="Full Name" class="w-full p-5 border border-gray-300 rounded-2xl focus:ring-4 focus:ring-purple-200 focus:border-purple-500 transition-all text-lg" required>
-                <input type="email" placeholder="Email Address" class="w-full p-5 border border-gray-300 rounded-2xl focus:ring-4 focus:ring-purple-200 focus:border-purple-500 transition-all text-lg" required>
-                <input type="text" placeholder="Pickup Address" class="w-full p-5 border border-gray-300 rounded-2xl focus:ring-4 focus:ring-purple-200 focus:border-purple-500 transition-all text-lg" required>
-                <input type="text" placeholder="Dropoff Address" class="w-full p-5 border border-gray-300 rounded-2xl focus:ring-4 focus:ring-purple-200 focus:border-purple-500 transition-all text-lg" required>
-                <select class="w-full p-5 border border-gray-300 rounded-2xl focus:ring-4 focus:ring-purple-200 focus:border-purple-500 transition-all text-lg" required>
-                    <option>Service Type</option>
-                    <option>Express (2 hours)</option>
-                    <option>Standard (Next day)</option>
-                    <option>Bulk/Custom</option>
-                </select>
-                <input type="text" placeholder="Package Details (weight, dimensions)" class="w-full p-5 border border-gray-300 rounded-2xl focus:ring-4 focus:ring-purple-200 focus:border-purple-500 transition-all text-lg">
-                <div class="md:col-span-2">
-                    <button type="submit" class="w-full bg-gradient-to-r from-purple-600 to-indigo-600 text-white py-6 px-8 rounded-2xl font-semibold text-xl hover:shadow-2xl hover:scale-105 transition-all duration-300">
-                        <i class="fas fa-paper-plane mr-3"></i>Get Instant Quote
-                    </button>
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <div class="space-y-6 text-2xl">
+                        <div class="flex items-center p-4 bg-green-50 rounded-2xl">
+                            <i class="fas fa-phone text-3xl text-green-600 mr-4"></i>
+                            <a href="tel:+2347017054326" class="font-bold hover:text-green-700">+234 701 705 4326</a>
+                        </div>
+                        <div class="flex items-center p-4 bg-emerald-50 rounded-2xl">
+                            <i class="fas fa-envelope text-3xl text-emerald-600 mr-4"></i>
+                            workingemail343@gmail.com
+                        </div>
+                        <div class="flex items-center p-4 bg-gray-50 rounded-2xl">
+                            <i class="fas fa-map-marker-alt text-3xl text-orange-500 mr-4"></i>
+                            Benin City, Edo State, Nigeria
+                        </div>
+                    </div>
                 </div>
-            </form>
-            <div id="form-message" class="mt-8 text-center hidden">
-                <p class="bg-green-100 text-green-800 p-6 rounded-2xl text-lg font-semibold">Thank you! Your quote request has been sent. We'll reply in 5 minutes.</p>
+                <form id="quick-contact" class="space-y-6">
+                    <input type="text" placeholder="Your Name" class="w-full p-5 border border-gray-300 rounded-2xl focus:ring-4 focus:ring-green-200 text-lg" required>
+                    <input type="tel" placeholder="Phone" class="w-full p-5 border border-gray-300 rounded-2xl focus:ring-4 focus:ring-green-200 text-lg" required>
+                    <textarea placeholder="Quick message or delivery enquiry" rows="4" class="w-full p-5 border border-gray-300 rounded-2xl focus:ring-4 focus:ring-green-200 text-lg"></textarea>
+                    <button type="submit" class="w-full bg-gradient-to-r from-green-600 to-emerald-600 text-white py-6 px-8 rounded-2xl font-bold text-xl hover:shadow-2xl">
+                        Send Message
+                    </button>
+                </form>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
     <footer class="bg-gradient-to-r from-gray-900 to-gray-800 text-white py-16">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid md:grid-cols-4 gap-8 mb-12">
-                <div>
-                    <h3 class="text-2xl font-bold mb-6 bg-gradient-to-r from-purple-400 to-indigo-400 bg-clip-text text-transparent">
-                        SwiftHaul
-                    </h3>
-                    <p class="text-gray-400 mb-6">Fastest delivery in your city. Reliable, tracked, insured.</p>
-                    <div class="flex space-x-4">
-                        <a href="#" class="w-12 h-12 bg-purple-600 rounded-2xl flex items-center justify-center hover:bg-purple-700 transition-colors"><i class="fab fa-twitter"></i></a>
-                        <a href="#" class="w-12 h-12 bg-indigo-600 rounded-2xl flex items-center justify-center hover:bg-indigo-700 transition-colors"><i class="fab fa-linkedin"></i></a>
-                        <a href="#" class="w-12 h-12 bg-blue-600 rounded-2xl flex items-center justify-center hover:bg-blue-700 transition-colors"><i class="fab fa-facebook"></i></a>
-                    </div>
-                </div>
-                <div>
-                    <h4 class="font-semibold mb-6">Services</h4>
-                    <ul class="space-y-3 text-gray-400">
-                        <li><a href="#" class="hover:text-white transition-colors">Express Delivery</a></li>
-                        <li><a href="#" class="hover:text-white transition-colors">Standard</a></li>
-                        <li><a href="#" class="hover:text-white transition-colors">Bulk Shipping</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h4 class="font-semibold mb-6">Company</h4>
-                    <ul class="space-y-3 text-gray-400">
-                        <li><a href="#" class="hover:text-white transition-colors">About Us</a></li>
-                        <li><a href="#" class="hover:text-white transition-colors">Careers</a></li>
-                        <li><a href="#" class="hover:text-white transition-colors">Privacy</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h4 class="font-semibold mb-6">Contact</h4>
-                    <div class="space-y-3 text-gray-400">
-                        <p>+1 (555) 123-4567</p>
-                        <p>hello@swifthaul.com</p>
-                        <p>24/7 Support</p>
-                    </div>
-                </div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h3 class="text-3xl font-bold mb-6 bg-gradient-to-r from-green-400 to-emerald-400 bg-clip-text text-transparent">SpeedyParcel</h3>
+            <p class="text-gray-400 mb-8">Fastest delivery in Benin City & Edo State | 24/7 Service</p>
+            <div class="flex flex-col md:flex-row gap-8 text-lg mb-8">
+                <a href="tel:+2347017054326" class="flex items-center justify-center gap-2 hover:text-green-400">
+                    <i class="fas fa-phone"></i> +234 701 705 4326
+                </a>
+                <a href="mailto:workingemail343@gmail.com" class="flex items-center justify-center gap-2 hover:text-green-400">
+                    <i class="fas fa-envelope"></i> Email
+                </a>
             </div>
-            <div class="border-t border-gray-800 pt-8 text-center text-gray-500 text-sm">
-                © 2026 SwiftHaul. All rights reserved. | Made with ❤️ for fast deliveries.
-            </div>
+            <div class="text-gray-500 text-sm">© 2026 SpeedyParcel Nigeria. All rights reserved.</div>
         </div>
     </footer>
 
     <script>
-        // Mobile menu toggle
+        // Mobile menu
         document.getElementById('mobile-menu-btn').addEventListener('click', () => {
-            const menu = document.getElementById('mobile-menu');
-            menu.classList.toggle('hidden');
+            document.getElementById('mobile-menu').classList.toggle('hidden');
         });
 
-        // Smooth scrolling
+        // Smooth scroll
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
+            anchor.addEventListener('click', e => {
                 e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
+                document.querySelector(anchor.getAttribute('href')).scrollIntoView({behavior: 'smooth'});
             });
         });
 
-        // Contact form
-        document.getElementById('contact-form').addEventListener('submit', function(e) {
-            e.preventDefault();
-            document.getElementById('form-message').classList.remove('hidden');
-            this.reset();
-            setTimeout(() => {
-                document.getElementById('form-message').classList.add('hidden');
-            }, 5000);
+        // Quote calculator
+        document.getElementById('get-quote').addEventListener('click', () => {
+            document.getElementById('quote-result').classList.remove('hidden');
         });
 
-        // Initialize map
-        const map = L.map('map').setView([40.7128, -74.0060], 13); // NYC example
-        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-            attribution: '© OpenStreetMap contributors'
-        }).addTo(map);
-
-        // Add delivery route markers
-        const warehouse = L.marker([40.7128, -74.0060]).addTo(map)
-            .bindPopup('SwiftHaul Warehouse');
-        const truck = L.marker([40.718, -74.010], {
+        // Benin City map [6.3318, 5.6148]
+        const map = L.map('map').setView([6.3318, 5.6148], 13);
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map);
+        
+        // Moving truck
+        const truck = L.marker([6.3318, 5.6148], {
             icon: L.divIcon({
                 className: 'custom-div-icon',
-                html: '<div style="background:orange;width:20px;height:20px;border-radius:50%;border:3px solid white;box-shadow:0 0 10px rgba(255,165,0,0.5);"></div>',
+                html: '<div style="background:#10b981;width:20px;height:20px;border-radius:50%;border:3px solid white;box-shadow:0 0 10px rgba(16,185,129,0.5);"></div>',
                 iconSize: [26, 26]
             })
-        }).addTo(map).bindPopup('Your delivery truck');
+        }).addTo(map).bindPopup('SpeedyParcel Truck');
 
-        // Animate truck movement
         setInterval(() => {
-            const newLat = 40.7128 + (Math.random() - 0.5) * 0.01;
-            const newLng = -74.0060 + (Math.random() - 0.5) * 0.01;
+            const newLat = 6.3318 + (Math.random() - 0.5) * 0.02;
+            const newLng = 5.6148 + (Math.random() - 0.5) * 0.02;
             truck.setLatLng([newLat, newLng]);
             map.panTo([newLat, newLng], {animate: true, duration: 1});
         }, 3000);
+
+        // Form submissions
+        document.querySelectorAll('form').forEach(form => {
+            form.addEventListener('submit', e => {
+                e.preventDefault();
+                alert('Thank you! We received your details. Call +234 701 705 4326 to confirm.');
+                form.reset();
+            });
+        });
     </script>
 </body>
 </html>
