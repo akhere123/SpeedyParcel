@@ -3,333 +3,245 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SpeedyParcel - Fast Reliable Delivery in Benin City & Edo State</title>
+    <title>SpeedyParcel - Reliable Delivery Benin City</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
-        * { font-family: 'Poppins', sans-serif; }
-        .gradient-bg { background: linear-gradient(135deg, #166534 0%, #22c55e 50%, #16a34a 100%); }
-        .truck-move { animation: moveTruck 8s infinite linear; }
-        @keyframes moveTruck { 0% { transform: translateX(0); } 100% { transform: translateX(85vw); } }
-        .tracking-card { background: linear-gradient(145deg, #f8fafc, #e2e8f0); }
-        .btn-gradient { background: linear-gradient(135deg, #22c55e, #16a34a); }
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        * { font-family: 'Inter', sans-serif; }
+        .gradient-hero { background: linear-gradient(135deg, #10b981 0%, #059669 100%); }
+        .tracking-status { background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%); }
     </style>
 </head>
 <body class="bg-gray-50">
     <!-- Header -->
-    <header class="gradient-bg shadow-2xl sticky top-0 z-50">
-        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between items-center py-4">
-                <div class="flex items-center space-x-2">
-                    <i class="fas fa-truck text-3xl text-white"></i>
-                    <h1 class="text-2xl font-bold text-white">SpeedyParcel</h1>
-                </div>
-                <div class="hidden md:flex space-x-8">
-                    <a href="#home" class="text-white hover:text-green-200 font-medium">Home</a>
-                    <a href="#track" class="text-white hover:text-green-200 font-medium">Track</a>
-                    <a href="#book" class="text-white hover:text-green-200 font-medium">Book</a>
-                    <a href="#services" class="text-white hover:text-green-200 font-medium">Services</a>
-                    <a href="#contact" class="text-white hover:text-green-200 font-medium">Contact</a>
-                </div>
-                <button class="md:hidden text-white">
-                    <i class="fas fa-bars text-xl"></i>
-                </button>
+    <header class="bg-white shadow-lg sticky top-0 z-50">
+        <nav class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-3">
+                <i class="fas fa-truck text-3xl text-green-600"></i>
+                <h1 class="text-2xl font-bold text-gray-900">SpeedyParcel</h1>
+            </div>
+            <div class="hidden md:flex space-x-8">
+                <a href="#home" class="text-gray-700 hover:text-green-600 font-medium">Home</a>
+                <a href="#about" class="text-gray-700 hover:text-green-600 font-medium">About</a>
+                <a href="#services" class="text-gray-700 hover:text-green-600 font-medium">Services</a>
+                <a href="#track" class="text-green-600 font-bold border-b-2 border-green-600">Track&Trace</a>
+                <a href="#contact" class="text-gray-700 hover:text-green-600 font-medium">Contact</a>
             </div>
         </nav>
     </header>
 
-    <!-- Hero Section -->
-    <section id="home" class="gradient-bg text-white py-32 relative overflow-hidden">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h2 class="text-5xl md:text-7xl font-bold mb-6">Fastest Delivery in <span class="text-yellow-300">Benin City</span></h2>
-            <p class="text-xl md:text-2xl mb-12 max-w-3xl mx-auto">Same-day delivery across Edo State. Track your parcel live on map. From ₦500 anywhere in Benin City.</p>
-            <div class="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
-                <a href="#track" class="btn-gradient text-white px-8 py-4 rounded-full text-lg font-semibold shadow-2xl hover:shadow-green-500/50 transition-all">Track Parcel</a>
-                <a href="#book" class="border-2 border-white text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-white hover:text-green-800 transition-all">Book Now</a>
-            </div>
+    <!-- Hero -->
+    <section id="home" class="gradient-hero text-white py-32">
+        <div class="max-w-6xl mx-auto px-6 text-center">
+            <h2 class="text-5xl md:text-6xl font-bold mb-6">Reliable Logistics Solutions</h2>
+            <p class="text-xl md:text-2xl mb-12 max-w-3xl mx-auto">Tailored for Benin City & Edo State. Real-time tracking, same-day delivery from ₦500.</p>
+            <a href="#track" class="bg-white text-green-600 px-12 py-4 rounded-full font-bold text-xl hover:bg-gray-100 transition-all">Track Your Shipment</a>
         </div>
-        <div class="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-t from-gray-50 to-transparent"></div>
     </section>
 
-    <!-- Live Tracking Section -->
+    <!-- About -->
+    <section id="about" class="py-24 bg-white">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h3 class="text-4xl font-bold text-gray-900 mb-6">Industry Leader in Smart Logistics</h3>
+                    <p class="text-xl text-gray-600 mb-8">Benin City's fastest delivery service with live GPS tracking and 2-hour guarantee.</p>
+                    <div class="space-y-4 text-lg">
+                        <div class="flex items-center"><i class="fas fa-check text-green-600 mr-3"></i>Same-day Benin City delivery</div>
+                        <div class="flex items-center"><i class="fas fa-check text-green-600 mr-3"></i>Live GPS tracking</div>
+                        <div class="flex items-center"><i class="fas fa-check text-green-600 mr-3"></i>Free pickup</div>
+                    </div>
+                </div>
+                <div class="grid grid-cols-2 gap-6">
+                    <div class="bg-gradient-hero text-white p-8 rounded-3xl text-center">
+                        <div class="text-4xl font-bold">2hr</div>
+                        <div>Delivery</div>
+                    </div>
+                    <div class="bg-blue-500 text-white p-8 rounded-3xl text-center">
+                        <div class="text-4xl font-bold">500+</div>
+                        <div>Daily Shipments</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats -->
+    <section class="py-20 bg-gray-900 text-white">
+        <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-4 gap-8 text-center">
+            <div><div class="text-4xl font-bold text-green-400">1,250</div><div class="text-gray-400">Projects Completed</div></div>
+            <div><div class="text-4xl font-bold text-green-400">450</div><div class="text-gray-400">Repeat Customers</div></div>
+            <div><div class="text-4xl font-bold text-green-400">1,100</div><div class="text-gray-400">Satisfied Customers</div></div>
+            <div><div class="text-4xl font-bold text-green-400">25</div><div class="text-gray-400">Team Members</div></div>
+        </div>
+    </section>
+
+    <!-- Tracking Section (EXACT Nextifyx style) -->
     <section id="track" class="py-24 bg-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-4xl mx-auto px-6">
             <div class="text-center mb-20">
-                <h3 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Live Parcel Tracking</h3>
-                <p class="text-xl text-gray-600 max-w-2xl mx-auto">Enter your tracking number to see your parcel location in real-time on Benin City map</p>
+                <h3 class="text-4xl font-bold text-gray-900 mb-4">Track & Trace</h3>
+                <p class="text-xl text-gray-600">Enter your tracking number</p>
             </div>
-            
-            <!-- Tracking Form -->
-            <div class="max-w-2xl mx-auto mb-16">
-                <div class="bg-white p-8 rounded-3xl shadow-2xl border border-gray-100">
-                    <div class="flex gap-4 mb-8">
-                        <input type="text" id="trackingNumber" placeholder="Enter tracking number (e.g. SP1234567890)" 
-                               class="flex-1 px-6 py-4 border-2 border-gray-200 rounded-2xl focus:border-green-500 focus:outline-none text-lg">
-                        <button onclick="trackParcel()" class="btn-gradient text-white px-8 py-4 rounded-2xl font-semibold shadow-xl hover:shadow-green-500/50 transition-all">
-                            <i class="fas fa-search mr-2"></i>Track
-                        </button>
-                    </div>
+
+            <!-- Tracking Input -->
+            <div class="bg-white p-8 rounded-3xl shadow-2xl mb-12">
+                <div class="flex gap-4">
+                    <input type="text" id="trackInput" placeholder="Enter tracking number e.g. 1234567890" 
+                           class="flex-1 px-6 py-5 border-2 border-gray-200 rounded-2xl text-xl focus:border-green-500 focus:outline-none">
+                    <button onclick="showTracking()" class="bg-green-600 text-white px-12 py-5 rounded-2xl font-bold text-lg hover:bg-green-700">Track</button>
                 </div>
             </div>
 
-            <!-- Tracking Results -->
-            <div id="trackingResult" class="hidden">
-                <div class="tracking-card p-8 rounded-3xl shadow-2xl border border-green-100 mb-8">
-                    <div class="flex items-center justify-between mb-6">
+            <!-- Tracking Results (Hidden initially) -->
+            <div id="trackingDetails" class="hidden">
+                <!-- Header -->
+                <div class="tracking-status p-8 rounded-3xl shadow-2xl mb-8">
+                    <div class="flex justify-between items-center mb-6">
                         <div>
-                            <h4 class="text-2xl font-bold text-gray-900">SP1234567890</h4>
-                            <p class="text-green-600 font-semibold">In Transit - ETA: 45 mins</p>
-                        </div>
-                        <span class="bg-green-100 text-green-800 px-4 py-2 rounded-full font-medium">Moving</span>
-                    </div>
-                    <div class="grid md:grid-cols-3 gap-6 text-center">
-                        <div>
-                            <div class="text-2xl font-bold text-gray-900">12.5 km</div>
-                            <div class="text-sm text-gray-600">Distance Traveled</div>
-                        </div>
-                        <div>
-                            <div class="text-2xl font-bold text-gray-900">45 mins</div>
-                            <div class="text-sm text-gray-600">Time Remaining</div>
-                        </div>
-                        <div>
-                            <div class="text-2xl font-bold text-gray-900">85%</div>
-                            <div class="text-sm text-gray-600">Progress</div>
+                            <h4 class="text-3xl font-bold text-gray-900 mb-1">SpeedyParcel Logistics</h4>
+                            <div class="flex items-center">
+                                <span class="w-3 h-3 bg-green-500 rounded-full mr-3"></span>
+                                <span class="text-xl font-bold text-green-600">Active</span>
+                            </div>
                         </div>
                     </div>
+                    <h2 class="text-2xl font-bold text-gray-900 mb-8">Shipment Tracking 1234567890</h2>
                 </div>
 
-                <!-- Live Map -->
-                <div class="bg-white rounded-3xl shadow-2xl overflow-hidden">
-                    <div id="map" style="height: 500px;"></div>
-                </div>
-            </div>
-        </div>
-    </section>
+                <!-- Sender/Receiver Grid -->
+                <div class="grid md:grid-cols-2 gap-12 mb-12">
+                    <!-- Sender -->
+                    <div class="bg-white p-8 rounded-2xl shadow-xl">
+                        <h5 class="text-xl font-bold text-gray-900 mb-6 flex items-center">
+                            <i class="fas fa-box text-green-600 mr-3"></i>Sender
+                        </h5>
+                        <div class="space-y-3 text-lg">
+                            <div><strong>Origin City:</strong> Benin City</div>
+                            <div><strong>Origin Location:</strong> Ekenwan Road</div>
+                            <div><strong>Date:</strong> 2026-04-23</div>
+                            <div><strong>Contact:</strong> Mike Okon</div>
+                            <div><strong>Address:</strong> 88 Sapele Road, Benin City</div>
+                            <div><strong>Quantity:</strong> 2</div>
+                            <div><strong>Weight:</strong> 5Kg</div>
+                            <div><strong>Description:</strong> Electronics box</div>
+                        </div>
+                    </div>
 
-    <!-- Booking Section -->
-    <section id="book" class="py-24 bg-gray-50">
-        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-20">
-                <h3 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Book Your Delivery</h3>
-                <p class="text-xl text-gray-600">Fill details below for instant quote. Free pickup in Benin City.</p>
-            </div>
-
-            <!-- Sender Form -->
-            <div class="grid lg:grid-cols-2 gap-8 mb-12">
-                <div class="bg-white p-8 rounded-3xl shadow-xl border border-gray-100">
-                    <h4 class="text-2xl font-bold text-gray-900 mb-6">Sender Details</h4>
-                    <div class="space-y-4">
-                        <input type="text" id="senderName" placeholder="Full Name" class="w-full px-5 py-4 border border-gray-200 rounded-xl focus:border-green-500 focus:outline-none">
-                        <input type="tel" id="senderPhone" placeholder="+234 701 705 4326" class="w-full px-5 py-4 border border-gray-200 rounded-xl focus:border-green-500 focus:outline-none">
-                        <input type="text" id="senderAddress" placeholder="Pickup Address (Benin City)" class="w-full px-5 py-4 border border-gray-200 rounded-xl focus:border-green-500 focus:outline-none">
-                        <textarea id="senderInstructions" placeholder="Special instructions (optional)" rows="3" class="w-full px-5 py-4 border border-gray-200 rounded-xl focus:border-green-500 focus:outline-none"></textarea>
+                    <!-- Receiver -->
+                    <div class="bg-white p-8 rounded-2xl shadow-xl">
+                        <h5 class="text-xl font-bold text-gray-900 mb-6 flex items-center">
+                            <i class="fas fa-user text-green-600 mr-3"></i>Recipient
+                        </h5>
+                        <div class="space-y-3 text-lg">
+                            <div><strong>Delivery Location:</strong> Ugbowo</div>
+                            <div><strong>Destination:</strong> Benin City</div>
+                            <div><strong>Delivery Time:</strong> 14:30</div>
+                            <div><strong>ETA:</strong> 2026-04-23</div>
+                            <div><strong>Contact:</strong> Grace Osas</div>
+                            <div><strong>Address:</strong> 45 Ekenwan, Benin City</div>
+                        </div>
                     </div>
                 </div>
 
-                <!-- Receiver Form -->
-                <div class="bg-white p-8 rounded-3xl shadow-xl border border-gray-100">
-                    <h4 class="text-2xl font-bold text-gray-900 mb-6">Receiver Details</h4>
-                    <div class="space-y-4">
-                        <input type="text" id="receiverName" placeholder="Full Name" class="w-full px-5 py-4 border border-gray-200 rounded-xl focus:border-green-500 focus:outline-none">
-                        <input type="tel" id="receiverPhone" placeholder="+234 Phone Number" class="w-full px-5 py-4 border border-gray-200 rounded-xl focus:border-green-500 focus:outline-none">
-                        <input type="text" id="receiverAddress" placeholder="Delivery Address (Edo State)" class="w-full px-5 py-4 border border-gray-200 rounded-xl focus:border-green-500 focus:outline-none">
-                        <textarea id="receiverInstructions" placeholder="Special instructions (optional)" rows="3" class="w-full px-5 py-4 border border-gray-200 rounded-xl focus:border-green-500 focus:outline-none"></textarea>
+                <!-- Shipping History (EXACT Nextifyx style) -->
+                <div class="bg-white rounded-2xl shadow-xl overflow-hidden">
+                    <h5 class="text-xl font-bold text-gray-900 p-6 border-b border-gray-200">Shipping History</h5>
+                    <div class="divide-y divide-gray-100">
+                        <div class="p-6 flex justify-between items-center hover:bg-gray-50">
+                            <div>
+                                <div class="font-bold text-lg">2026-04-23 14:13</div>
+                                <div class="text-green-600 font-medium">Active - Package out for delivery</div>
+                            </div>
+                            <div class="w-20 h-20 bg-green-100 rounded-full flex items-center justify-center text-green-600 font-bold">Now</div>
+                        </div>
+                        <div class="p-6 flex justify-between items-center hover:bg-gray-50">
+                            <div>
+                                <div class="font-bold text-lg">2026-04-23 12:11</div>
+                                <div class="text-blue-600 font-medium">Arrived at Benin sorting facility</div>
+                            </div>
+                            <div><i class="fas fa-map-marker-alt text-2xl text-blue-500"></i></div>
+                        </div>
+                        <div class="p-6 flex justify-between items-center hover:bg-gray-50">
+                            <div>
+                                <div class="font-bold text-lg">2026-04-23 10:04</div>
+                                <div class="text-yellow-600 font-medium">On hold - Sender instructions</div>
+                            </div>
+                            <div><i class="fas fa-pause text-2xl text-yellow-500"></i></div>
+                        </div>
+                        <div class="p-6 flex justify-between items-center hover:bg-gray-50">
+                            <div>
+                                <div class="font-bold text-lg">2026-04-23 08:05</div>
+                                <div class="text-purple-600 font-medium">Departed from pickup</div>
+                            </div>
+                            <div><i class="fas fa-truck text-2xl text-purple-500"></i></div>
+                        </div>
+                        <div class="p-6 flex justify-between items-center hover:bg-gray-50 bg-gray-50">
+                            <div>
+                                <div class="font-bold text-lg">2026-04-23 06:00</div>
+                                <div class="text-gray-600 font-medium">Pending - Pickup confirmed</div>
+                            </div>
+                            <div><i class="fas fa-clock text-2xl text-gray-500"></i></div>
+                        </div>
                     </div>
-                </div>
-            </div>
-
-            <!-- Package & Quote -->
-            <div class="bg-white p-8 rounded-3xl shadow-xl border border-gray-100 mb-12">
-                <h4 class="text-2xl font-bold text-gray-900 mb-8">Package Details & Quote</h4>
-                <div class="grid md:grid-cols-4 gap-6 mb-8">
-                    <div>
-                        <label class="block text-sm font-medium text-gray-700 mb-2">Weight (kg)</label>
-                        <input type="number" id="weight" min="0.1" step="0.1" value="1" class="w-full px-4 py-3 border border-gray-200 rounded-xl focus:border-green-500">
-                    </div>
-                    <div>
-                        <label class="block text-sm font-medium text-gray-700 mb-2">Length (cm)</label>
-                        <input type="number" id="length" min="1" value="30" class="w-full px-4 py-3 border border-gray-200 rounded-xl focus:border-green-500">
-                    </div>
-                    <div>
-                        <label class="block text-sm font-medium text-gray-700 mb-2">Width (cm)</label>
-                        <input type="number" id="width" min="1" value="20" class="w-full px-4 py-3 border border-gray-200 rounded-xl focus:border-green-500">
-                    </div>
-                    <div>
-                        <label class="block text-sm font-medium text-gray-700 mb-2">Height (cm)</label>
-                        <input type="number" id="height" min="1" value="15" class="w-full px-4 py-3 border border-gray-200 rounded-xl focus:border-green-500">
-                    </div>
-                </div>
-                <div class="flex justify-between items-center p-6 bg-green-50 rounded-2xl">
-                    <div>
-                        <h5 class="font-bold text-xl text-gray-900" id="quoteAmount">₦750</h5>
-                        <p class="text-sm text-gray-600">Instant quote • Free pickup • 2hr delivery</p>
-                    </div>
-                    <button onclick="bookDelivery()" class="btn-gradient text-white px-8 py-4 rounded-2xl font-semibold shadow-xl hover:shadow-green-500/50">
-                        Book Now <i class="fas fa-arrow-right ml-2"></i>
-                    </button>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Services -->
-    <section id="services" class="py-24 bg-white">
-        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-20">
-                <h3 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Our Services</h3>
-            </div>
-            <div class="grid md:grid-cols-3 gap-8">
-                <div class="text-center p-8 rounded-3xl bg-gray-50 hover:bg-green-50 transition-all group">
-                    <div class="w-20 h-20 bg-gradient-to-r from-green-500 to-green-600 rounded-3xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform">
-                        <i class="fas fa-bolt text-2xl text-white"></i>
-                    </div>
-                    <h4 class="text-2xl font-bold text-gray-900 mb-4">Express 2hr</h4>
-                    <p class="text-gray-600 mb-6">Same-day delivery anywhere in Benin City from ₦500</p>
-                    <div class="text-2xl font-bold text-green-600">₦500+</div>
-                </div>
-                <div class="text-center p-8 rounded-3xl bg-gray-50 hover:bg-green-50 transition-all group">
-                    <div class="w-20 h-20 bg-gradient-to-r from-green-500 to-green-600 rounded-3xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform">
-                        <i class="fas fa-shipping-fast text-2xl text-white"></i>
-                    </div>
-                    <h4 class="text-2xl font-bold text-gray-900 mb-4">Edo State</h4>
-                    <p class="text-gray-600 mb-6">Next-day delivery across Edo State from ₦1,200</p>
-                    <div class="text-2xl font-bold text-green-600">₦1,200+</div>
-                </div>
-                <div class="text-center p-8 rounded-3xl bg-gray-50 hover:bg-green-50 transition-all group">
-                    <div class="w-20 h-20 bg-gradient-to-r from-green-500 to-green-600 rounded-3xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform">
-                        <i class="fas fa-warehouse text-2xl text-white"></i>
-                    </div>
-                    <h4 class="text-2xl font-bold text-gray-900 mb-4">Business</h4>
-                    <p class="text-gray-600 mb-6">Bulk & corporate delivery. Custom contracts available</p>
-                    <div class="text-2xl font-bold text-green-600">Call Us</div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Contact -->
-    <section id="contact" class="py-24 gradient-bg text-white">
-        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h3 class="text-4xl md:text-5xl font-bold mb-6">Ready to Send?</h3>
-            <p class="text-xl mb-12 max-w-2xl mx-auto opacity-90">Call or WhatsApp us for instant booking. Free collection in Benin City.</p>
-            <div class="grid md:grid-cols-3 gap-8 max-w-2xl mx-auto">
-                <div class="bg-white/10 backdrop-blur-xl p-8 rounded-3xl">
-                    <i class="fas fa-phone text-3xl text-green-300 mb-4"></i>
-                    <div class="text-2xl font-bold">+234 701 705 4326</div>
-                    <a href="tel:+2347017054326" class="text-green-200 hover:text-white">Call Now</a>
-                </div>
-                <div class="bg-white/10 backdrop-blur-xl p-8 rounded-3xl">
-                    <i class="fas fa-envelope text-3xl text-green-300 mb-4"></i>
-                    <div class="text-2xl font-bold">workingemail343@gmail.com</div>
-                    <a href="mailto:workingemail343@gmail.com" class="text-green-200 hover:text-white">Send Email</a>
-                </div>
-                <div class="bg-white/10 backdrop-blur-xl p-8 rounded-3xl">
-                    <i class="fab fa-whatsapp text-3xl text-green-300 mb-4"></i>
-                    <div class="text-2xl font-bold">WhatsApp</div>
-                    <a href="https://wa.me/2347017054326" class="text-green-200 hover:text-white">Chat Now</a>
-                </div>
+    <section id="contact" class="py-24 bg-gray-900 text-white">
+        <div class="max-w-4xl mx-auto px-6">
+            <div class="text-center mb-20">
+                <h3 class="text-4xl font-bold mb-6">Contact Us</h3>
+                <p class="text-xl text-gray-400">+234 701 705 4326 | workingemail343@gmail.com</p>
             </div>
+            <form class="max-w-2xl mx-auto space-y-6">
+                <input type="text" placeholder="Your Name" class="w-full p-5 rounded-2xl bg-gray-800 border-none text-white focus:outline-none">
+                <input type="email" placeholder="Email Address" class="w-full p-5 rounded-2xl bg-gray-800 border-none text-white focus:outline-none">
+                <input type="text" placeholder="Subject" class="w-full p-5 rounded-2xl bg-gray-800 border-none text-white focus:outline-none">
+                <textarea placeholder="Write a Message" rows="5" class="w-full p-5 rounded-2xl bg-gray-800 border-none text-white focus:outline-none"></textarea>
+                <button type="submit" class="w-full bg-green-600 text-white py-5 rounded-2xl font-bold text-xl hover:bg-green-700">Send Message</button>
+            </form>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="bg-gray-900 text-white py-12">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <div class="flex justify-center mb-8">
-                <i class="fas fa-truck text-4xl text-green-400"></i>
-                <h3 class="text-2xl font-bold ml-3">SpeedyParcel</h3>
+    <footer class="bg-gray-800 text-gray-400 py-12">
+        <div class="max-w-6xl mx-auto px-6 text-center">
+            <div class="flex justify-center items-center space-x-3 mb-8">
+                <i class="fas fa-truck text-2xl text-green-400"></i>
+                <h4 class="text-xl font-bold text-white">SpeedyParcel</h4>
             </div>
-            <p class="text-gray-400 mb-8 max-w-2xl mx-auto">© 2026 SpeedyParcel. Fastest delivery service in Benin City and Edo State. Licensed & Insured.</p>
-            <div class="flex flex-wrap justify-center gap-6 text-sm text-gray-400">
-                <a href="#home" class="hover:text-white">Home</a>
-                <a href="#track" class="hover:text-white">Track</a>
-                <a href="#book" class="hover:text-white">Book</a>
-                <a href="#services" class="hover:text-white">Services</a>
-                <a href="#contact" class="hover:text-white">Contact</a>
+            <div class="grid md:grid-cols-3 gap-8 mb-8 text-sm">
+                <div>Home | About | Services</div>
+                <div>Track&Trace | Contact</div>
+                <div>+234 701 705 4326 | Benin City, Nigeria</div>
             </div>
+            <div>© 2026 SpeedyParcel. All rights reserved.</div>
         </div>
     </footer>
 
     <script>
-        // Initialize map
-        let map;
-        function initMap() {
-            map = L.map('map').setView([6.3318, 5.6148], 13); // Benin City
-            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-                attribution: '© OpenStreetMap'
-            }).addTo(map);
-            
-            // SpeedyParcel marker
-            L.marker([6.3318, 5.6148]).addTo(map)
-                .bindPopup('SpeedyParcel HQ')
-                .openPopup();
+        function showTracking() {
+            const num = document.getElementById('trackInput').value || '1234567890';
+            document.getElementById('trackingDetails').classList.remove('hidden');
+            document.querySelector('h2.text-2xl').textContent = `Shipment Tracking ${num}`;
         }
 
-        // Track parcel
-        function trackParcel() {
-            const trackingNum = document.getElementById('trackingNumber').value || 'SP1234567890';
-            document.getElementById('trackingResult').classList.remove('hidden');
-            
-            // Update tracking number
-            document.querySelector('h4.text-2xl').textContent = trackingNum;
-            
-            // Add truck marker (moving animation)
-            if (map) {
-                L.marker([6.3350, 5.6100], {
-                    icon: L.divIcon({
-                        html: '<i class="fas fa-truck text-2xl text-green-600 truck-move"></i>',
-                        iconSize: [30, 30],
-                        className: 'truck-icon'
-                    })
-                }).addTo(map);
-                map.setView([6.3330, 5.6120], 14);
-            }
-        }
-
-        // Quote calculator
-        document.getElementById('weight').addEventListener('input', calculateQuote);
-        document.getElementById('length').addEventListener('input', calculateQuote);
-        document.getElementById('width').addEventListener('input', calculateQuote);
-        document.getElementById('height').addEventListener('input', calculateQuote);
-
-        function calculateQuote() {
-            const weight = parseFloat(document.getElementById('weight').value) || 1;
-            const volume = parseFloat(document.getElementById('length').value) * 
-                          parseFloat(document.getElementById('width').value) * 
-                          parseFloat(document.getElementById('height').value);
-            const base = Math.max(weight * 300, Math.ceil(volume / 5000) * 250);
-            const quote = Math.max(base, 500);
-            document.getElementById('quoteAmount').textContent = `₦${quote.toLocaleString()}`;
-        }
-
-        // Book delivery
-        function bookDelivery() {
-            const trackingNum = 'SP' + Math.random().toString(36).substr(2, 9).toUpperCase();
-            alert(`✅ Booking confirmed!\n\nTracking Number: ${trackingNum}\n\nSave this number to track your parcel.\nDriver will call sender in 15 mins.\nFree pickup arranged.`);
-            
-            // Scroll to tracking
-            document.getElementById('track').scrollIntoView({ behavior: 'smooth' });
-            document.getElementById('trackingNumber').value = trackingNum;
-            trackParcel();
-        }
-
-        // Smooth scrolling
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
+        // Smooth scroll
+        document.querySelectorAll('a[href^="#"]').forEach(a => {
+            a.addEventListener('click', e => {
                 e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
+                document.querySelector(a.getAttribute('href')).scrollIntoView({behavior: 'smooth'});
             });
         });
 
-        // Initialize
-        window.addEventListener('load', () => {
-            initMap();
-            calculateQuote();
+        // Form submit
+        document.querySelector('form').addEventListener('submit', e => {
+            e.preventDefault();
+            alert('✅ Message sent! We\'ll call you on +234 701 705 4326');
         });
     </script>
 </body>
